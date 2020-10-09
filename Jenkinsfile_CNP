@@ -7,7 +7,6 @@ def product = 'ethos'
 withInfraPipeline(product) {
 
   onEthosldata {
-    disableLegacyDeployment()
     env.TF_STATE_STORAGE_TEMPLATE = 'statestore'
     env.TF_STATE_CONTAINER_TEMPLATE = 'statectr'
   }
